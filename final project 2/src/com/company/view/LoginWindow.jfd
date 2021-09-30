@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "6.0.6.4.204" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:124:p, par l:::p {comp passwordfield::::85:x, comp usernamefield::::85:x}, space s:::p, par l {comp label2:::p::p, comp label3:::p::p}}, seq l {space :p:145:p, comp button1:::p::p}}, space ::119:x}}"
+			"$verticalGroup": "par l {seq t {space ::78:x, par l {comp usernamefield::t:p::p, comp label2::t:p::p}, space :p:12:p, par b {comp passwordfield::b:p::p, comp label3::b:p::p}, space :p:27:p, comp button1:::p::p, space :p:70:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "usernamefield"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordfield"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "username"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "password"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "login"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

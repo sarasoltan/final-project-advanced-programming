@@ -1,0 +1,52 @@
+JFDML JFormDesigner: "6.0.6.4.204" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::329:x, comp button1:::p::p, space :p:26:p}, seq l {space :p:86:p, par l {seq {comp label2:::p::p, space s:::p, comp stimefield:::p:22:p, space :::p, comp label3:::p::p, space :::p, comp textField3:::p:24:p}, seq l {par l {par t:::p {comp label4::l:::x, comp label1::l:::x}, comp label5:::p::p}, space s:::p, par l:::p {comp sdatefield::::89:x, comp snamefield::::89:x}}}, space ::136:x}}"
+			"$verticalGroup": "par l {seq l {space :p:32:p, par b {comp label4::b:p::p, comp snamefield::b:p::p, comp label5::b:p::p}, space :::p, par b {comp label1::b:p::p, comp sdatefield::b:p::p}, space u:::p, par b {comp label2::b:p::p, comp label3::b:p::p, comp stimefield::b:p::p, comp textField3::b:p::p}, space ::93:x, comp button1:::p::p, space :p:21:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "sdatefield"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Sending date"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Sending time"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "stimefield"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": ":"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "snamefield"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Sender name"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

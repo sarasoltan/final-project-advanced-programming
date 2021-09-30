@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "6.0.6.4.204" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:40:p, par l {seq {par l {seq l {comp label1:::p::p, space u:::p, comp namefield:::p:107:p}, seq l {par l {par t {comp label2:::p::p, comp label3::l:p::p}, comp label4::l:p::p}, par l {seq l {space :p:6:p, comp weightfield:::p:35:p}, seq l {space s:::p, par l {comp rnamefield::l:p:92:p, comp snamefield::l:p:61:p}}}}, seq l {comp label5:::p::p, space :::p, comp valuefiled:::p:37:p, space :::p, comp label6:::p::p, space :::p, comp rdatefield:::p:65:p}}, space ::156:x}, seq t {par t {seq {comp label7:::p::p, space :::p, comp raddfield::::234:x}, seq l {par t:::p {seq {comp label8:::p::p, space :::p, comp spcodefield:::::x}, seq l {comp label9:::p::p, space :::p, comp rpcodefield:::p:57:p}}, space ::121:x, comp button1:::p::p}}, space :p:26:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:10:p, par b {comp label1::b:p::p, comp namefield::b:p::p}, space :::p, par b {comp label2::b:p::p, comp weightfield::b:p::p}, space :::p, par b {comp label3::b:::x, comp snamefield::b:p::p}, space :::p, par b {comp rnamefield::b:p::p, comp label4::b:p::p}, space :::p, par b {comp label5::b:p::p, comp label6::b:p::p, comp valuefiled::b:p::p, comp rdatefield::b:p::p}, par l {seq {space :::p, par b {comp label7::b:p::p, comp raddfield::b:p::p}, space :::p, par b {comp label8::b:p::p, comp spcodefield::b:p::p}, space :::p, par l {comp label9:::p::p, comp rpcodefield:::p::p}, space :::x}, seq t {space :::x, comp button1:::p::p, space :p:19:p}}}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "product's name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "product's weight"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "sender's name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "receiver's name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "value"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "date"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "namefield"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "weightfield"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "snamefield"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rnamefield"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "valuefiled"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rdatefield"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "ok"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "receiver's address"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "raddfield"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "sender postal code"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "spcodefield"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "receiver postal code"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "rpcodefield"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
